@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: rag-spring
+  ai:
+    openai:
+      api-key: ${OPENAI_KEY}
+      chat:
+        options:
+          model: gpt-4o
+    vectorstore:
+      pgvector:
+        initialize-schema: true
